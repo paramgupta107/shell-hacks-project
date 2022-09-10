@@ -1,0 +1,14 @@
+{
+    "name": "Password Vault",
+    "version": "1.0.0",
+    "description": "Secure password manager",
+    "manifest_version": 3,
+    "author": "Param Gupta",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Password Vault"
+    },
+    "permissions": [
+        "activeTab"
+      ]
+}
