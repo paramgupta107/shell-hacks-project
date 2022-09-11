@@ -49,6 +49,7 @@ async function read() {
 function changeStateToPasswordUpdateView() {
   let main = document.getElementById("main");
   main.innerHTML = `
+  <h1>Update</h1>
   <input id="pass" />
   <button id="update">Update</button>
   `;
@@ -61,8 +62,9 @@ function changeStateToPasswordUpdateView() {
 function changeStateToPasswordCreateView() {
   let main = document.getElementById("main");
   main.innerHTML = `
+  <h1>Password</h1>
   <input id="pass" />
-  <button id="create">Create</button>
+  <button id="create">Save</button>
   `;
   let passInput = document.getElementById("pass");
   passInput.value = password;
@@ -92,7 +94,7 @@ async function createPassword() {
 function changeStateToMain() {
   let main = document.getElementById("main");
   main.innerHTML = `
-  <h1 id="title"></h1>
+  <h1>Enter master password</h1>
   <input id="master" />
   <button id="manage">Manage Password</button>
   `;
@@ -105,7 +107,7 @@ function changeStateToMain() {
     var protocol = url.protocol;
     // `domain` now has a value like 'example.com'
     var element = document.getElementById("title");
-    element.innerText = domain;
+    // element.innerText = domain;
     if (protocol !== "https:") {
       let main = document.getElementById("main");
       main.innerHTML = `
